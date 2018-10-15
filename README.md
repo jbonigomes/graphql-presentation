@@ -1,1 +1,3 @@
 # GraphQL presentation
+
+    $ yarn start
