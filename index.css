@@ -1,0 +1,40 @@
+body {
+  height: 100vh;
+  font-family: 'Source Sans Pro', sans-serif;
+  background: radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+}
+
+h1 {
+  font-family: 'Lobster Two', cursive;
+}
+
+a {
+  transition: 0.5s;
+  padding: 0 0.1em;
+  border-radius: 0.2em;
+  background: rgba(255,255,255,0.5);
+  text-shadow: -1px -1px 2px rgba(100,100,100,0.9);
+}
+
+a:hover,
+a:focus {
+  background: rgba(255,255,255,1);
+  text-shadow: -1px -1px 2px rgba(100,100,100,0.5);
+}
+
+.step {
+  margin: 0;
+  width: 900px;
+  opacity: 0.3;
+  padding: 40px;
+  font-size: 48px;
+  line-height: 1.5;
+  margin: 20px auto;
+  position: relative;
+  transition: opacity 1s;
+  box-sizing: border-box;
+}
+
+.step.active {
+  opacity: 1
+}
