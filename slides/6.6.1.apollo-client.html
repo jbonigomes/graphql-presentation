@@ -1,0 +1,15 @@
+<h1>Configure</h1>
+
+<pre><code class="language-jsx">// Imports omited...
+
+const client = new ApolloClient({
+  uri: 'https://my.graphql.url.com/graphql'
+})
+
+const App = () => (
+  <ApolloProvider client={client}>
+    <MyApp />
+  </ApolloProvider>
+)
+
+render(<App />, document.getElementById('root'));</code></pre>

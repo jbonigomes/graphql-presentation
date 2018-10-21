@@ -1,0 +1,21 @@
+<div>
+  <a href="https://graphql.org/swapi-graphql/?query={allFilms{films{title}}}">
+    GET https://graphql.org/swapi-graphql/?query={allFilms{films{title}}}
+  </a>
+</div>
+
+<pre><code class="language-js">{
+  "data": {
+    "allFilms": {
+      "films": [
+        {
+          "title": "A New Hope"
+        },
+        {
+          "title": "The Empire Strikes Back"
+        },
+        ...
+      ]
+    }
+  }
+}</code></pre>

@@ -1,0 +1,9 @@
+<h1>Schema (SDL continued)</h1>
+<pre><code class="language-graphql">type Query {
+  getBooks: [Book]
+  getAuthors: [Author]
+}
+
+type Mutation {
+  addBook(title: String, author: String): Book
+}</code></pre>

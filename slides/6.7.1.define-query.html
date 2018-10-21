@@ -1,0 +1,12 @@
+<h1>Define query</h1>
+
+<pre><code class="language-jsx">// Imports omited...
+const GET_DOGS = gql`
+  query GetDogs {
+    dogs {
+      id
+      name
+      isSelected @client
+    }
+  }
+`</code></pre>

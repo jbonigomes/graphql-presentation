@@ -1,0 +1,9 @@
+<h1>Resolvers</h1>
+<pre><code class="language-js">// Imports ommited...
+
+const resolvers = {
+  Query: {
+    getBooks: async () => await http.get('/books'),
+    getAuthors: async () => await db.authors.find(),
+  }
+}</code></pre>

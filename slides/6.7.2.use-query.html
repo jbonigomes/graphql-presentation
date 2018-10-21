@@ -1,0 +1,14 @@
+<h1>Use query</h1>
+
+<pre><code class="language-jsx">// Imports omited...
+
+const GoodDogs = () => (
+  <Query query={GET_DOGS}>
+    {({ loading, error, data }) => {
+      if (error) return <Error />
+      if (loading || !data) return <Loading />
+
+      return <DogList dogs={data.dogs} />
+    }}
+  </Query>
+)</code></pre>
